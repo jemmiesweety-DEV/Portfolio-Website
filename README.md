@@ -3,8 +3,8 @@
 A responsive multi-page portfolio built for **COS 106: Introduction to Web Technologies** at Miva Open University.
 
 **Author:** Aanukanmi Adewuyi (Jemmie)
-**Live site:** ADD-YOUR-HOSTED-LINK-HERE
-**Repository:** ADD-YOUR-GITHUB-REPO-LINK-HERE
+**Live site:** https://jemmiesweety-dev.github.io/Portfolio-Website/
+**Repository:** https://github.com/jemmiesweety-DEV/Portfolio-Website
 
 ## Pages
 
