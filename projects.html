@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by Aanukanmi Adewuyi: a stock tracker, an appointment scheduler, and an academic planner.">
+  <title>Projects | Jemmie Adewuyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jemmie Adewuyi</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container narrow">
+        <h1>My projects</h1>
+        <p class="lead">Three small tools built with HTML, CSS, and JavaScript. Each one solves a problem I've seen at a real front desk.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-grid">
+
+          <article class="project-card">
+            <img src="images/project-stock.png" alt="Screenshot of the Pharmacy Stock Tracker" width="800" height="500" loading="lazy">
+            <div class="project-body">
+              <h2>Pharmacy Stock Tracker</h2>
+              <p>Add items with their quantities and see at a glance which ones are running low. It's based on how stock is counted and shelved at a pharmacy.</p>
+              <p class="tech">Built with HTML, CSS, JavaScript arrays and functions</p>
+              <div class="project-links">
+                <a href="stock-tracker.html" class="btn btn-primary">Open project</a>
+                <a href="https://github.com/YOUR-USERNAME/portfolio-website" class="btn btn-outline" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/project-scheduler.png" alt="Screenshot of the Front Desk Appointment Scheduler" width="800" height="500" loading="lazy">
+            <div class="project-body">
+              <h2>Front Desk Appointment Scheduler</h2>
+              <p>Book appointments with a name, date, and time, and see them listed in a table. The form checks the details before saving.</p>
+              <p class="tech">Built with HTML forms, tables, JavaScript validation</p>
+              <div class="project-links">
+                <a href="scheduler.html" class="btn btn-primary">Open project</a>
+                <a href="https://github.com/YOUR-USERNAME/portfolio-website" class="btn btn-outline" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/project-planner.png" alt="Screenshot of the Academic Planner" width="800" height="500" loading="lazy">
+            <div class="project-body">
+              <h2>Academic Planner</h2>
+              <p>Add study tasks, tick them off when they're done, and delete the ones you no longer need. It's the planner you can use on this site.</p>
+              <p class="tech">Built with HTML, CSS, JavaScript DOM manipulation and events</p>
+              <div class="project-links">
+                <a href="planner.html" class="btn btn-primary">Open project</a>
+                <a href="https://github.com/YOUR-USERNAME/portfolio-website" class="btn btn-outline" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aanukanmi Adewuyi. Built for COS 106, Miva Open University.</p>
+      <p><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

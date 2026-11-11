@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Aanukanmi Adewuyi.">
+  <title>Contact | Jemmie Adewuyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jemmie Adewuyi</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container narrow">
+        <h1>Get in touch</h1>
+        <p class="lead">Have a question or an opportunity? Send me a message and I'll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <p class="error-text" id="nameError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <p class="error-text" id="emailError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel">
+            <p class="error-text" id="phoneError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <p class="error-text" id="messageError" role="alert"></p>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p id="formSuccess" class="success-text" role="status"></p>
+        </form>
+
+        <aside class="contact-details">
+          <h2>Contact details</h2>
+          <ul>
+            <li><strong>Email</strong><br><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></li>
+            <li><strong>Location</strong><br>Abuja, Nigeria</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aanukanmi Adewuyi. Built for COS 106, Miva Open University.</p>
+      <p><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

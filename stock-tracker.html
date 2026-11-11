@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Track pharmacy stock levels and spot low items.">
+  <title>Pharmacy Stock Tracker | Jemmie Adewuyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jemmie Adewuyi</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container narrow">
+        <h1>Pharmacy Stock Tracker</h1>
+        <p class="lead">Add items and quantities, adjust them as stock moves, and see at a glance what is running low.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="stockForm" class="inline-form" novalidate>
+          <div class="field">
+            <label for="itemName">Item name</label>
+            <input type="text" id="itemName" placeholder="e.g. Paracetamol 500mg" autocomplete="off">
+          </div>
+          <div class="field field-small">
+            <label for="itemQty">Quantity</label>
+            <input type="number" id="itemQty" min="0" step="1" inputmode="numeric">
+          </div>
+          <button type="submit" class="btn btn-primary">Add item</button>
+        </form>
+        <p id="stockError" class="error-text" role="alert"></p>
+        <p id="stockSummary" class="task-count" aria-live="polite"></p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Current stock. Items with 10 or fewer units are marked low.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="stockBody"></tbody>
+          </table>
+        </div>
+        <p id="stockEmpty" class="empty-message">No items yet. Add your first one above.</p>
+        <p class="back-link"><a href="projects.html">Back to all projects</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aanukanmi Adewuyi. Built for COS 106, Miva Open University.</p>
+      <p><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/stock.js"></script>
+</body>
+</html>

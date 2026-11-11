@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book front desk appointments with validation.">
+  <title>Appointment Scheduler | Jemmie Adewuyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jemmie Adewuyi</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container narrow">
+        <h1>Appointment Scheduler</h1>
+        <p class="lead">Book an appointment with a name, date, and time. Past dates and double bookings are blocked.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="scheduleForm" class="inline-form" novalidate>
+          <div class="field">
+            <label for="clientName">Client name</label>
+            <input type="text" id="clientName" autocomplete="off">
+          </div>
+          <div class="field field-small">
+            <label for="apptDate">Date</label>
+            <input type="date" id="apptDate">
+          </div>
+          <div class="field field-small">
+            <label for="apptTime">Time</label>
+            <input type="time" id="apptTime">
+          </div>
+          <button type="submit" class="btn btn-primary">Book</button>
+        </form>
+        <p id="scheduleError" class="error-text" role="alert"></p>
+        <p id="scheduleSuccess" class="success-text" role="status"></p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Booked appointments, earliest first.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Client</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+          </table>
+        </div>
+        <p id="scheduleEmpty" class="empty-message">No appointments booked yet.</p>
+        <p class="back-link"><a href="projects.html">Back to all projects</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aanukanmi Adewuyi. Built for COS 106, Miva Open University.</p>
+      <p><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/scheduler.js"></script>
+</body>
+</html>

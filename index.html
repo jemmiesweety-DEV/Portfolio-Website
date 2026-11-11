@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Aanukanmi Adewuyi, a Software Engineering student at Miva Open University.">
+  <title>Jemmie Adewuyi | Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jemmie Adewuyi</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="welcome">Welcome to my portfolio</p>
+          <h1>Hi, I'm Jemmie.<br>I'm learning to build for the web.</h1>
+          <p class="lead">I'm Aanukanmi Adewuyi, a Software Engineering student at Miva Open University. This site shows my skills, my projects, and a planner I built to keep my studies organised.</p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">See my projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in touch</a>
+          </div>
+          <div class="intro-audio">
+            <p class="intro-audio-label" id="introLabel">Hear a 30-second introduction from me</p>
+            <audio controls preload="metadata" aria-labelledby="introLabel">
+              <source src="media/intro.mp3" type="audio/mpeg">
+              <source src="media/intro.m4a" type="audio/mp4">
+              Your browser does not support audio playback. <a href="media/intro.mp3">Download the introduction</a> instead.
+            </audio>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <div class="photo-frame" data-initials="AA">
+            <img src="images/profile.jpg" alt="Portrait of Aanukanmi Adewuyi" width="400" height="480">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>A short bio</h2>
+        <p>I'm based in Abuja, Nigeria, and I'm studying for a B.Sc. in Software Engineering. Before moving into tech, I worked in front desk and sales roles at pharmaceutical stores, where I learned to handle customers calmly, keep accurate records, and stay organised under pressure.</p>
+        <p>Now I'm combining that people experience with code. I'm learning HTML, CSS, and JavaScript, and I enjoy building small tools that solve real, everyday problems.</p>
+        <p><a href="about.html" class="text-link">Read more about me</a></p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>What you'll find here</h2>
+        <ul class="quick-links">
+          <li><a href="about.html"><strong>About me</strong><span>My education, skills, and interests</span></a></li>
+          <li><a href="projects.html"><strong>Projects</strong><span>Three things I've built</span></a></li>
+          <li><a href="planner.html"><strong>Academic planner</strong><span>Add, finish, and delete study tasks</span></a></li>
+          <li><a href="contact.html"><strong>Contact</strong><span>Send me a message</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Aanukanmi Adewuyi. Built for COS 106, Miva Open University.</p>
+      <p><a href="mailto:aanukanmiadewuyi@gmail.com">aanukanmiadewuyi@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
