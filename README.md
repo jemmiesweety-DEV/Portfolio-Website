@@ -24,17 +24,22 @@ A responsive multi-page portfolio built for **COS 106: Introduction to Web Techn
 - **CSS3:** external stylesheet, Flexbox, CSS Grid, responsive design, transitions and animations, CSS variables
 - **JavaScript:** event handling, DOM manipulation, form validation, arrays and functions, localStorage
 
-## Folder structure
+## File structure
+
+All files sit together in the main folder of the repository:
 
 ```
-css/style.css      shared styles
-js/main.js         mobile menu (all pages)
-js/planner.js      planner logic
-js/contact.js      contact form validation
-js/stock.js        stock tracker logic
-js/scheduler.js    scheduler logic
-images/            photo and project screenshots
-media/             audio introduction
+index.html  about.html  projects.html  planner.html
+contact.html  stock-tracker.html  scheduler.html   the seven pages
+style.css        one stylesheet shared by every page
+main.js          mobile menu (all pages)
+planner.js       academic planner
+contact.js       contact form validation
+stock.js         stock tracker
+scheduler.js     appointment scheduler
+profile.jpg      my photograph
+project-*.png    project screenshots
+intro.mp3  intro.m4a    audio introduction
 ```
 
 ## Run locally
